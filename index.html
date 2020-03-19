@@ -15,6 +15,11 @@
     
     <title>Pups In Public</title>
     <style>
+      body {
+        max-width: 1100px;
+        margin: auto;
+        font-family: Quicksand;
+      }
       @font-face {
         font-family: WickedGrit;
         src: url(font/WickedGrit.ttf);
@@ -28,29 +33,55 @@
         font-weight: 600;
         font-size: 22px;
       }
-      p {
+      p, span {
         font-family: Quicksand;
         font-weight: 500;
         font-size: 20px;
+        color: black;
       }
       .fa, .fab {
         color: #FEDE69;
       }
+      nav {
+        min-width: 100%;
+      }
+      .active {
+        text-decoration: underline;
+      }
     </style>
   </head>
   <body>
-    <header class="jumbotron jumbotron-fluid">
-      <div class="container">
-          <div class="row">
-              <div class="col-2 align-self-center">
-                  <img src="img/logo.png" class="img-fluid" />
-              </div>
-              <div class="col">
-                  <h1>Pups In Public</h1>
-                  <p>Changing Florida Legislation to allow dogs in public establishments</p>
-              </div>
-          </div>
+    <header class="jumbotron-fluid">
+      <div style="background-color: grey;">
+        <p style="font-size: 16px; color: white; float: left;">TAKE ACTION NOW! -></p>
+        <i class="fa fa-facebook-square offset-lg-9"></i>&nbsp;
+        <i class="fa fa-instagram"></i>&nbsp;
+        <i class="fa fa-twitter-square"></i>
+
       </div>
+              
+  <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
+  <a class="navbar-brand" href="#"><img src="img/logo.png" class="img-fluid" /></a>
+  <button class="navbar-toggler offset-9" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon bg-dark"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav offset-lg-7 offset-md-4">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Our Cause <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Take Action</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Sign the Petition</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Find Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
   </header>
     <h1>Hello</h1>
     <h3>Test 2</h3>

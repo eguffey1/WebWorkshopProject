@@ -88,3 +88,7 @@ top:1px;
   border: 2px solid black;
   font-family: Verdana, Tahoma, sans-serif;
 }
+
+.jumbotron{
+  padding: 0!important;
+}

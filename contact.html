@@ -15,7 +15,7 @@
     
     <title>Pups In Public</title>
     <style>
-      body {
+      body,html {
         max-width: 1100px;
         margin: auto;
         font-family: Quicksand;
@@ -33,7 +33,7 @@
         font-weight: 600;
         font-size: 22px;
       }
-      p, span {
+      p, span, legend {
         font-family: Quicksand;
         font-weight: 500;
         font-size: 20px;
@@ -49,18 +49,19 @@
         text-decoration: underline;
       }
     </style>
+    <script src="js/index.js"></script>
   </head>
   <body>
     <header>
       <div style="background-color: grey;">
         <p style="font-size: 16px; color: white; float: left;">TAKE ACTION NOW! -></p>
-        <i class="fa fa-twitter-square" style="float: right;">&nbsp;</i>
-        <i class="fa fa-instagram" style="float: right;">&nbsp;</i>&nbsp;
-        <i class="fa fa-facebook-square" style="float: right;">&nbsp;</i>
+        <a href="https://twitter.com"><i class="fa fa-twitter-square" style="float: right;">&nbsp;&nbsp;</i></a>
+        <a href="https://instagram.com"><i class="fa fa-instagram" style="float: right;">&nbsp;&nbsp;</i></a>&nbsp;&nbsp;
+        <a href="https://facebook.com"><i class="fa fa-facebook-square" style="float: right;">&nbsp;&nbsp;</i></a>
       </div>
               
   <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
-  <a class="navbar-brand" href="index.html"><img src="img/logo-y.png" width="17%" height="17%" /></a> <!--leave the img fluid class, just change inital size. Use %'s-->
+  <a class="navbar-brand" href="index.html"><img src="img/logo-y.png" width="17%" height="17%" /></a>
   <button class="navbar-toggler offset-9" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -82,8 +83,21 @@
   </div>
 </nav>
   </header>
-  <div style="height: 500px; background-image: url();" class="text-center col-4 align-text-bottom">
-    <h1>Hello</h1>
-  </div>
+  <form name="validation" method="post" class="grid fieldset" onsubmit="return generateWelcome()">
+    <fieldset>
+    <legend>Send us a Message!</legend>
+    Name:<br>
+    <div id="z"><input type="text" name="firstname" style="width: 35%" onfocus="return provideHint1()" onblur="return validateFirst()" required><span id="a"></span></div><br>
+    E-Mail Address:<br>
+    <div id="x"><input type="email" name="email" style="width: 35%" onfocus="return provideHint3()" onblur="return validateEmail()" required><span id="c"></span></div><br>
+    Comments/Questions:<br>
+    <div id="w"><textarea name="phone" style="width: 65%" rows="7"></textarea></div><br>
+    <button type="submit" class="button myButton" name="formButton" style="width: 40%">Submit</button>
+</fieldset>
+</form>
+<br/><br/>
+        <div id="validation">
+        </div>
+        <br/><br/>
   </body>
 </html>

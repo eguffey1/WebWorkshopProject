@@ -88,12 +88,14 @@ top:1px;
   border: 2px solid black;
   font-family: Verdana, Tahoma, sans-serif;
 }
+.logo-img{
+  margin-left: 8%;
+}
+
 
 .jumbotron{
   padding: 0!important;
 }
-
-
 
 /*****************************/
 /*STYLES FOR ABOUT US SECTION*/

@@ -92,3 +92,16 @@ top:1px;
 .jumbotron{
   padding: 0!important;
 }
+
+
+
+/*****************************/
+/*STYLES FOR ABOUT US SECTION*/
+/*****************************/
+
+.about-us-section{
+  padding: 0 5%;
+  height: 500px; 
+  background-image: url();
+}
+

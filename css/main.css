@@ -145,7 +145,6 @@ position: relative;
 .first-section{
   height: 100%;
   padding: 7% 0;
-  background:pink;
 }
 
 .first-section-head{
@@ -154,6 +153,16 @@ position: relative;
 
 .first-section-text{
   line-height: 2.3rem;
+}
+
+.take-action-btn{
+  color: black;
+  margin-top: 1.8%;
+  width: 30%;
+  font-size: 18px;
+  border-radius: 50px;
+  background: rgb(254, 222, 105);
+  border-color:  rgb(254, 222, 105);;
 }
 
 

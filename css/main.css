@@ -156,13 +156,16 @@ position: relative;
 }
 
 .take-action-btn{
-  color: black;
+  color: black !important;
   margin-top: 1.8%;
   width: 30%;
   font-size: 18px;
   border-radius: 50px;
   background: rgb(254, 222, 105);
   border-color:  rgb(254, 222, 105);;
+}
+.action-link{
+  color:black;
 }
 
 

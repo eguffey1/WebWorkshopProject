@@ -1,4 +1,11 @@
-
+/****************************/
+/*COLORS FOR THE SITE
+ #FEDE69 -Puppy Yellow
+ #9ED194 -Puppy Green
+ #FFE0A7 -Puppy Tan
+ #2E2E2D -Puppy Black
+*/
+/****************************/
 .jumbotron{
     padding: 0!important;
     margin: 0;
@@ -26,8 +33,8 @@
   .cover-btn{
     color: black;
     margin-top: 1.8%;
-    background: rgb(254, 222, 105);
-    border-color:  rgb(254, 222, 105);;
+    background: #9ED194;
+    border-color:  #9ED194;
   }
   
   /*****************************/
@@ -53,8 +60,8 @@
     width: 30%;
     font-size: 18px;
     border-radius: 50px;
-    background: rgb(254, 222, 105);
-    border-color:  rgb(254, 222, 105);;
+    background: #9ED194;
+    border-color:  #9ED194;
   }
   .action-link{
     color:black;
@@ -64,7 +71,7 @@
   .second-section{
     height: 100%;
     padding: 7% 0;
-    background:orange;
+    background:  #FEDE69;
   }
   
   

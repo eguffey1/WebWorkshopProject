@@ -7,275 +7,274 @@
 */
 /****************************/
 .jumbotron{
-    padding: 0!important;
-    margin: 0;
-  }
-  .cover-image{
-  position: relative;
-  }
-  .center {
+  padding: 0!important;
+  margin: 0;
+}
+.cover-image{
+position: relative;
+}
+.center {
+  position: absolute;
+  left: 0;
+  right: 50%;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  font-size: 48px;
+}
+
+.center p{
+  color: white;
+  line-height: 2.8rem;
+  padding: 0 5%;
+  margin: 1% 0;
+}
+
+
+.cover-btn{
+  color: black;
+  width: 15%;
+  margin-top: 1.8%;
+  background: #9ED194;
+  border-radius: 50px;
+  border-color:  #9ED194;
+}
+
+/*****************************/
+/*STYLES FOR ABOUT US SECTION*/
+/*****************************/
+
+.first-section{
+  height: 100%;
+  padding: 7% 0;
+}
+
+.first-section-head{
+  margin-bottom: 5%;
+}
+
+.first-section-text{
+  line-height: 2.3rem;
+}
+
+.take-action-btn{
+  color: black !important;
+  margin-top: 1.8%;
+  width: 15%;
+  font-size: 14px;
+  border-radius: 50px;
+  background: #9ED194;
+  border-color:  #9ED194;
+}
+.action-link{
+  color:black;
+}
+
+
+.second-section{
+  height: 100%;
+  padding: 7% 0;
+  background:  #FEDE69;
+}
+
+.puppy-pic-container{
+  margin: auto 0;
+}
+
+.sad-puppy{
+  width: 100%;
+}
+
+
+
+
+.masonry-head{
+  padding-top: 7%;
+  padding-bottom: 4%;
+  text-align: center;
+}
+
+/***************************************/
+/********STYLES FOR MASONRY GRID******/
+/***************************************/
+
+.custom-grid {
+  background: #ffffff;
+  padding-bottom: 7%;
+}
+
+/* clear fix */
+.custom-grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+.custom-grid .grid-sizer,
+.custom-grid .grid-item {
+  width: 33%;
+    margin-right: .33%;
+    margin-bottom: .33%;
+}
+
+.custom-grid .grid-item {
+  float: left;
+}
+
+/*caption*/
+.custom-grid .grid-item {
+    position: relative;
+    overflow: hidden;
+}
+.custom-grid .grid-item .tag {
     position: absolute;
-    left: 0;
-    right: 50%;
-    top: 25%;
+    top: 17px;
+    right: 10px;
+    padding: 5px 7px;
+    background: rgba(0, 0, 0, 0.65);
+    color: #ffffff;
+}
+.custom-grid .grid-item .caption {
+    position: absolute;
     width: 100%;
+    visibility: visible;
+    bottom: 0px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.custom-grid .grid-item img {
+  display: block;
+  max-width: 100%;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.custom-grid .grid-item:hover .caption {
+    visibility: visible;
+    transform: translateY(-100px);
+    -webkit-transform: translateY(-100px);
+    -moz-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
+    -o-transform: translateY(-100px);
+}
+.custom-grid .grid-item:hover img {
+    opacity: 1;
+    transform: scale(1.1);
+}
+.custom-grid .grid-item img {
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    z-index: 4;
+}
+.custom-grid .grid-item .blur {
+    background-color: #ffffff;
+    width: 100%;
+    height: 135px;
+    z-index: 5;
+    position: absolute;
+}
+.custom-grid .grid-item .caption-text h1 {
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.custom-grid .grid-item .caption-text {
+    z-index: 10;
+    color: #000000;
+    position: absolute;
+    width: 100%;
+    height: 135px;
     text-align: center;
-    font-size: 48px;
-  }
-  
+    top: 20px;
+}
+
+/***************************************/
+/********STYLES FOR MASONRY GRID******/
+/***************************************/
+
+
+
+
+/***************************************/
+/********MEDIA QUERIES******/
+/***************************************/
+
+@media only screen and (min-width: 901px) {
   .center p{
-    color: white;
+    top: 0%;
+    font-size: 48px;
     line-height: 2.8rem;
-    padding: 0 5%;
-    margin: 1% 0;
+    padding: 0 1%;
   }
-  
-  
   .cover-btn{
     color: black;
-    width: 15%;
+    width: 30%;
     font-size: 16px;
-    margin-top: 1.8%;
-    border-radius: 50px;
   }
-  
-  /*****************************/
-  /*STYLES FOR ABOUT US SECTION*/
-  /*****************************/
-  
-  .first-section{
-    height: 100%;
-    padding: 7% 0;
+}
+@media only screen and (max-width: 900px) {
+  .center p{
+    top: 0%;
+    font-size: 21px;
+    line-height: 1.5rem;
+    padding: 0 1%;
   }
-  
-  .first-section-head{
-    margin-bottom: 5%;
-  }
-  
-  .first-section-text{
-    line-height: 2.3rem;
-  }
-  
-  .take-action-btn{
-    color: black !important;
-    margin-top: 1.8%;
-    width: 15%;
+  .cover-btn{
+    color: black;
+    width: 30%;
     font-size: 14px;
-    border-radius: 50px;
-    background: #9ED194;
-    border-color:  #9ED194;
   }
-  .action-link{
-    color:black;
+}
+
+
+@media only screen and (min-width: 780px) {
+  .content{
+    padding: 0 4%;
   }
-  
-  
-  .second-section{
-    height: 100%;
-    padding: 7% 0;
-    background:  #FEDE69;
-  }
-  
-  .puppy-pic-container{
-    margin: auto 0;
-  .y-bg {
-    background: #FEDE69;
-  }
-  
-  .sad-puppy{
-    width: 100%;
-  }
-  
-  
-  
-  
   .masonry-head{
-    padding-top: 7%;
-    padding-bottom: 4%;
-    text-align: center;
+    line-height: 2rem;
   }
-  
-  /***************************************/
-  /********STYLES FOR MASONRY GRID******/
-  /***************************************/
-  
-  .custom-grid {
-    background: #ffffff;
-    padding-bottom: 7%;
+}
+@media only screen and (max-width: 500px) {
+   .center p{
+     top: 0%;
+    font-size: 14px;
+    line-height: 1.5rem;
+    padding: 0 1%;
+    margin-top: -10px;
   }
-  
-  /* clear fix */
-  .custom-grid:after {
-    content: '';
-    display: block;
-    clear: both;
+  .cover-btn{
+    color: black;
+    width: 30%;
+    font-size: 10px;
   }
-  
-  /* ---- .grid-item ---- */
-  .custom-grid .grid-sizer,
-  .custom-grid .grid-item {
-    width: 33%;
-      margin-right: .33%;
-      margin-bottom: .33%;
-  }
-  
-  .custom-grid .grid-item {
-    float: left;
-  }
-  
-  /*caption*/
-  .custom-grid .grid-item {
-      position: relative;
-      overflow: hidden;
-  }
-  .custom-grid .grid-item .tag {
-      position: absolute;
-      top: 17px;
-      right: 10px;
-      padding: 5px 7px;
-      background: rgba(0, 0, 0, 0.65);
-      color: #ffffff;
-  }
-  .custom-grid .grid-item .caption {
-      position: absolute;
-      width: 100%;
-      visibility: visible;
-      bottom: 0px;
-      cursor: pointer;
-      -webkit-transition: all 0.5s ease-in-out;
-      -moz-transition: all 0.5s ease-in-out;
-      -o-transition: all 0.5s ease-in-out;
-      -ms-transition: all 0.5s ease-in-out;
-      transition: all 0.5s ease-in-out;
-  }
-  .custom-grid .grid-item img {
-    display: block;
-    max-width: 100%;
-      -webkit-transition: all 0.5s ease-in-out;
-      -moz-transition: all 0.5s ease-in-out;
-      -o-transition: all 0.5s ease-in-out;
-      -ms-transition: all 0.5s ease-in-out;
-      transition: all 0.5s ease-in-out;
-  }
-  .custom-grid .grid-item:hover .caption {
-      visibility: visible;
-      transform: translateY(-100px);
-      -webkit-transform: translateY(-100px);
-      -moz-transform: translateY(-100px);
-      -ms-transform: translateY(-100px);
-      -o-transform: translateY(-100px);
-  }
-  .custom-grid .grid-item:hover img {
-      opacity: 1;
-      transform: scale(1.1);
-  }
-  .custom-grid .grid-item img {
-      margin: 0px;
-      padding: 0px;
-      float: left;
-      z-index: 4;
-  }
-  .custom-grid .grid-item .blur {
-      background-color: #ffffff;
-      width: 100%;
-      height: 135px;
-      z-index: 5;
-      position: absolute;
-  }
-  .custom-grid .grid-item .caption-text h1 {
-      text-transform: uppercase;
-      font-size: 18px;
-  }
-  .custom-grid .grid-item .caption-text {
-      z-index: 10;
-      color: #000000;
-      position: absolute;
-      width: 100%;
-      height: 135px;
-      text-align: center;
-      top: 20px;
-  }
-  
-  /***************************************/
-  /********STYLES FOR MASONRY GRID******/
-  /***************************************/
-  
-  
-
-  
-  /***************************************/
-  /********MEDIA QUERIES******/
-  /***************************************/
-  
-  @media only screen and (min-width: 901px) {
-    .center p{
-      top: 0%;
-      font-size: 48px;
-      line-height: 2.8rem;
-      padding: 0 1%;
-    }
-    .cover-btn{
-      color: black;
-      width: 30%;
-      font-size: 16px;
-    }
-  }
-  @media only screen and (max-width: 900px) {
-    .center p{
-      top: 0%;
-      font-size: 21px;
-      line-height: 1.5rem;
-      padding: 0 1%;
-    }
-    .cover-btn{
-      color: black;
-      width: 30%;
-      font-size: 14px;
-    }
-  }
-  
-
-  @media only screen and (min-width: 780px) {
-    .content{
-      padding: 0 4%;
-    }
-    .masonry-head{
-      line-height: 2rem;
-    }
-  }
-  @media only screen and (max-width: 500px) {
-     .center p{
+}
+  @media only screen and (max-width: 407px) {
+      .center p{
        top: 0%;
-      font-size: 14px;
-      line-height: 1.5rem;
-      padding: 0 1%;
-      margin-top: -10px;
-    }
-    .cover-btn{
-      color: black;
-      width: 30%;
-      font-size: 10px;
-    }
-  }
-    @media only screen and (max-width: 407px) {
-        .center p{
-         top: 0%;
-         font-size: 12px;
-         line-height: 1.5rem;
-         padding: 0 5%;
-         margin-top: -10px;
-       }
-       .cover-btn{
-         color: black;
-         width: 30%;
-         font-size: 10px;
-       }
+       font-size: 12px;
+       line-height: 1.5rem;
+       padding: 0 5%;
+       margin-top: -10px;
      }
-    @media only screen and (min-width: 300px) {
-   .content{
-     padding: 0 4%;
+     .cover-btn{
+       color: black;
+       width: 30%;
+       font-size: 10px;
+     }
    }
-   .masonry-head{
-     line-height: 2rem;
-   }
-  }
+  @media only screen and (min-width: 300px) {
+ .content{
+   padding: 0 4%;
+ }
+ .masonry-head{
+   line-height: 2rem;
+ }
+}

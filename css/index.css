@@ -36,9 +36,7 @@
     width: 15%;
     font-size: 16px;
     margin-top: 1.8%;
-    background: #9ED194;
     border-radius: 50px;
-    border-color:  #9ED194;
   }
   
   /*****************************/
@@ -80,6 +78,8 @@
   
   .puppy-pic-container{
     margin: auto 0;
+  .y-bg {
+    background: #FEDE69;
   }
   
   .sad-puppy{
@@ -201,7 +201,7 @@
   /***************************************/
   
   
-  
+
   
   /***************************************/
   /********MEDIA QUERIES******/

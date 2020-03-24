@@ -34,7 +34,7 @@
         }
       h1, h2 {
         font-family: WickedGrit;
-        font-size: 24px;
+        font-size: 30px;
         }
       h3, h4, h5, h6 {
         font-family: Quicksand;
@@ -94,34 +94,58 @@
       </ul>
     </div>
   </nav>
+  <h1 class="text-center pt-5" style="font-size: 250%;">Ways to Find Us</h1>
     </header>
+    <div class="container-fluid first-section container">
+      <div class="row no-gutters">
+        <div class="col-lg-7">
+          <h1 class="mb-2 text-center">Come Visit Us at RockPit Brewing!</h1>
+          <p class="text-center content mb-4" style="font-size: 170%;">10 W Illiana St, Orlando, FL 32806<br/>
+          rockpitbrewing.com</p>
+          <h1 class="mb-2 mt-5 text-center">Or Give Us a Call</h1>
+          <p class="text-center content mb-4" style="font-size: 170%;">(407) 826-1773</p>
+        </div>
 
-  <!--ADDING JUMBOTRON-->
-  <div class="jumbotron cover-image">
-    <img src="img/hero-crop2.jpg" class="img-fluid" alt="Responsive image">
-    <div class="center">
-      <p>Join the fight to help our four legged friends join us in breweries.</p>
-      <p>Your signature can go a long way!</p>
-      </p>
-      
-      <a  href="https://www.change.org/p/arron-bean-allow-pets-in-florida-breweries"><button type="button" class="myButton btn cover-btn btn-primary">SIGN PETITION</button></a>
-    </div>
-  </div>
-    <form name="validation" method="post" class="grid fieldset" onsubmit="return generateWelcome()">
-      <fieldset>
-      <legend><p>Send us a Message!</p></legend>
-      Name:<br>
-      <div id="z"><input type="text" name="firstname" style="width: 35%" onfocus="return provideHint1()" onblur="return validateFirst()" required><span id="a"></span></div><br>
-      E-Mail Address:<br>
-      <div id="x"><input type="email" name="email" style="width: 35%" onfocus="return provideHint3()" onblur="return validateEmail()" required><span id="c"></span></div><br>
-      Comments/Questions:<br>
-      <div id="w"><textarea name="phone" style="width: 65%" rows="7"></textarea></div><br>
-      <button type="submit" class="myButton btn cover-btn btn-primary" name="formButton" style="width: 40%">Submit</button>
-      </fieldset>
-    </form>
-    <br/><br/>
-    <div id="validation">
-    </div>
-    <br/><br/>
+        <div class="col-lg-5 puppy-pic-container">
+         <img class="sad-puppy" src="img/rockpitlocation.png" alt="">
+        </div>
+
+      </div>
+        </div>
+
+           <div class="container-fluid second-section w-60">
+            <h1 class="mb-4 text-center">Connect With Us</h1>
+            <p class="text-center content mb-4 ">Here is a list of all of our social media.  Feel free to take a peek if you're curious to find out more about what it is we do and want to keep up to date with the latest news on the progress we’ve made towards realizing our advocacy’s goals.<br/>
+            </div>
+
+
+    <div class="container-fluid first-section container">
+      <div class="row">
+        <div class="col-lg-6">
+          <form name="validation" method="post" class="grid fieldset" onsubmit="return generateWelcome()">
+            <fieldset>
+              <legend><h3 class="my-2 text-center">Reach out to us directly</h3></legend>
+            <p>Name:</p><br>
+            <div id="z"><input type="text" name="firstname" style="width: 100%;" onfocus="return provideHint1()" onblur="return validateFirst()" required><span id="a"></span></div><br>
+            <p>E-Mail Address:</p><br>
+            <div id="x"><input type="email" name="email" style="width: 100%" onfocus="return provideHint3()" onblur="return validateEmail()" required><span id="c"></span></div><br>
+            <p>Comments/Questions:</p><br>
+            <div id="w"><textarea name="phone" style="width: 100%" rows="7"></textarea></div><br>
+            <button type="submit" class="myButton btn cover-btn btn-primary mb-3" name="formButton" style="width: 40%">Submit</button>
+            </fieldset>
+          </form>
+          <br/><br/>
+          <div id="validation">
+          </div>
+          <br/><br/>
+        </div>
+
+        <div class="col-lg-5 puppy-pic-container">
+         <img class="sad-puppy" src="img/masonry-grid/white-short-coated-dog-160846.jpg" alt="">
+        </div>
+
+      </div>
+        </div>
+
   </body>
 </html>

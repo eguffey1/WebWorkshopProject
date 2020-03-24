@@ -24,6 +24,9 @@ p, span {
 nav {
   min-width: 100%;
 }
+.custom-link{
+  color:#2E2E2D!important;
+}
 .active {
   text-decoration: underline;
 }

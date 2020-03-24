@@ -11,8 +11,16 @@
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/reset.css" />
-    
+    <link rel="icon" href="img/favicon.png" type="image/png">
+
+
+    <!--SCRIPTS FOR MASONRY GRID-->
+   <script src="js/masonry.js"></script>
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <title>Pups In Public</title>
     <style>
       body {
@@ -49,58 +57,71 @@
         text-decoration: underline;
       }
     </style>
-    <script src="js/index.js"></script>
   </head>
-  <body>
-    <header>
-      <div style="background-color: grey; padding:.3%">
-        <p style="font-size: 16px; color: white; float: left;"><a class="sign-link" target="_blank" href="https://www.change.org/p/arron-bean-allow-pets-in-florida-breweries">Sign The Petition -></a></p>
-        <a href="https://twitter.com"><i class="fa fa-twitter-square" style="float: right;">&nbsp;&nbsp;</i></a>
-        <a href="https://instagram.com"><i class="fa fa-instagram" style="float: right;">&nbsp;&nbsp;</i></a>&nbsp;&nbsp;
-        <a href="https://facebook.com"><i class="fa fa-facebook-square" style="float: right;">&nbsp;&nbsp;</i></a>
-      </div>
-              
-  <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
-  <a class="navbar-brand" href="index.html">
-    <img class="logo-img" src="img/logo-y.png" width="17%" height="17%" />
-  </a>
-  <button class="navbar-toggler offset-10 align-self-center" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav offset-lg-5 offset-md-1 offset-sm-1">
-      <li class="nav-item ">
-        <a class="nav-link" href="index.html">Our Cause <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="action.html">Take Action</a>
-      </li>
-      <li class="nav-item ">
-        <a class="nav-link" href="petition.html">Sign the Petition</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="contact.html">Find Us</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-  </header>
-
-  <form name="validation" method="post" class="grid fieldset" onsubmit="return generateWelcome()">
-    <fieldset>
-    <legend>Send us a Message!</legend>
-    Name:<br>
-    <div id="z"><input type="text" name="firstname" style="width: 35%" onfocus="return provideHint1()" onblur="return validateFirst()" required><span id="a"></span></div><br>
-    E-Mail Address:<br>
-    <div id="x"><input type="email" name="email" style="width: 35%" onfocus="return provideHint3()" onblur="return validateEmail()" required><span id="c"></span></div><br>
-    Comments/Questions:<br>
-    <div id="w"><textarea name="phone" style="width: 65%" rows="7"></textarea></div><br>
-    <button type="submit" class="button myButton" name="formButton" style="width: 40%">Submit</button>
-</fieldset>
-</form>
-<br/><br/>
-        <div id="validation">
+    <body>
+      <header>
+        <div style="background-color: grey; padding:.3%">
+          <p style="font-size: 16px; color: white; float: left;"><a class="sign-link" target="_blank" href="https://www.change.org/p/arron-bean-allow-pets-in-florida-breweries">Sign The Petition -></a></p>
+          <a href="https://twitter.com"><i class="fa fa-twitter-square" style="float: right;">&nbsp;&nbsp;</i></a>
+          <a href="https://instagram.com"><i class="fa fa-instagram" style="float: right;">&nbsp;&nbsp;</i></a>&nbsp;&nbsp;
+          <a href="https://facebook.com"><i class="fa fa-facebook-square" style="float: right;">&nbsp;&nbsp;</i></a>
         </div>
-        <br/><br/>
+                
+    <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
+      <div class="nav-components">
+        <a class="navbar-brand" href="index.html">
+          <img class="logo-img" src="img/logo-y.png" width="17%" height="17%" />
+        </a>
+        <button class="navbar-toggler offset-10 align-self-center" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+  
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav offset-lg-5 offset-md-1 offset-sm-1">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Our Cause</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="action.html">Take Action</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="petition.html">Sign the Petition</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Find Us <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    </header>
+
+  <!--ADDING JUMBOTRON-->
+  <div class="jumbotron cover-image">
+    <img src="img/hero-crop2.jpg" class="img-fluid" alt="Responsive image">
+    <div class="center">
+      <p>Join the fight to help our four legged friends join us in breweries.</p>
+      <p>Your signature can go a long way!</p>
+      </p>
+      
+      <button type="button" class="myButton btn cover-btn btn-primary">SIGN PETITION</button>
+    </div>
+  </div>
+    <form name="validation" method="post" class="grid fieldset" onsubmit="return generateWelcome()">
+      <fieldset>
+      <legend><p>Send us a Message!</p></legend>
+      Name:<br>
+      <div id="z"><input type="text" name="firstname" style="width: 35%" onfocus="return provideHint1()" onblur="return validateFirst()" required><span id="a"></span></div><br>
+      E-Mail Address:<br>
+      <div id="x"><input type="email" name="email" style="width: 35%" onfocus="return provideHint3()" onblur="return validateEmail()" required><span id="c"></span></div><br>
+      Comments/Questions:<br>
+      <div id="w"><textarea name="phone" style="width: 65%" rows="7"></textarea></div><br>
+      <button type="submit" class="myButton btn cover-btn btn-primary" name="formButton" style="width: 40%">Submit</button>
+      </fieldset>
+    </form>
+    <br/><br/>
+    <div id="validation">
+    </div>
+    <br/><br/>
   </body>
 </html>

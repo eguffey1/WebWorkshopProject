@@ -8,7 +8,7 @@ function provideHint1() {
 }
 function provideHint3() {
   var modEmail = document.getElementById("c");
-  var hint3 = document.createTextNode("You must follow the pattern: blah@blah.com.");
+  var hint3 = document.createTextNode("You must follow the pattern: example@example.com.");
   while (modEmail.hasChildNodes()) {
     modEmail.removeChild(modEmail.lastChild);
   }
@@ -26,7 +26,7 @@ function validateFirst() {
     }
       var icon = document.createElement("img");
       icon.setAttribute('src', 'img/x.png');
-      var infoText = document.createTextNode(" You need to enter your first name");
+      var infoText = document.createTextNode(" Please enter your name");
       modFirst.appendChild(icon);
       modFirst.appendChild(infoText);
       modFirst.style.color = 'red';

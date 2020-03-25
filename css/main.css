@@ -26,6 +26,8 @@ nav {
 }
 .custom-link{
   color:#2E2E2D!important;
+  text-transform: uppercase;
+  font-size: 14px;
 }
 .active {
   text-decoration: underline;
@@ -123,6 +125,34 @@ input, textarea {
   -webkit-border-radius: 8px;
   border-radius: 8px;
 }
+/*************************/
+/*****footer styles*****/
+/*************************/
+
+footer{
+  background-color: grey;
+  margin: 5% 0;
+}
+.footer-text{
+color: white;
+margin-bottom: 3%;
+text-transform: uppercase;
+}
+.group-members{
+  font-size: 10px;
+  color: white;
+  margin-top: 3%;
+  text-transform: uppercase;
+}
+
+.icons{
+  padding: 2% 0;
+}
+
+/*************************/
+/*****footer styles*****/
+/*************************/
+
 @media only screen and (min-width: 45em) { /*responsive*/
   article {
       float: left;

@@ -47,8 +47,10 @@ position: relative;
   padding: 7% 0;
 }
 
-.first-section-head{
+.section-head{
   margin-bottom: 5%;
+  font-size: 30px;
+  line-height: 2rem;
 }
 
 .first-section-text{

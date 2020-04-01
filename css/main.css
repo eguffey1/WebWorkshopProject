@@ -6,7 +6,9 @@
  #2E2E2D -Puppy Black
 */
 /****************************/
-
+body{
+  overflow-x: hidden;
+}
 h3, h4, h5, h6 {
   font-family: Quicksand;
   font-weight: 600;

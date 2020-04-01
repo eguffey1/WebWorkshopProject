@@ -6,6 +6,10 @@
  #2E2E2D -Puppy Black
 */
 /****************************/
+
+html{
+  overflow-x: hidden;
+}
 body{
   overflow-x: hidden;
 }

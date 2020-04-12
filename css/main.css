@@ -145,12 +145,21 @@ margin-bottom: 3%;
 text-transform: uppercase;
 }
 .group-members{
-  font-size: 10px;
+  font-size: 12px;
   color: white;
   margin-top: 3%;
   text-transform: uppercase;
 }
 
+.disclaimer{
+  font-size: 10px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-top: 3%;
+  color: white;
+  line-height: 1rem;
+}
 .icons{
   padding: 2% 0;
 }
